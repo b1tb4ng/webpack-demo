@@ -3,6 +3,10 @@ import './style.css';
 import Icon from './icon.png';
 import Data from './data.xml';
 
+import toml from './data.toml';
+import yaml from './data.yaml';
+import json from './data.json5';
+
 function component() {
   const element = document.createElement('div');
 
@@ -22,3 +26,12 @@ function component() {
 }
 
 document.body.appendChild(component());
+
+console.log(toml.title);
+console.log(toml.owner.name);
+
+console.log(yaml.title);
+console.log(yaml.owner.name);
+
+console.log(json.title);
+console.log(json.owner.name);
